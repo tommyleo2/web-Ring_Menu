@@ -1,0 +1,277 @@
+span {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#at-plus-container {
+    position: fixed;
+    right: 50%;
+    top: 40%;
+    width: 33px;
+    height: 33px;
+}
+
+#bottom-positioner {
+    width: 33px;
+    height: 33px;
+}
+
+#button {
+    width: 33px;
+    height: 33px;
+}
+
+#control-ring-container {
+    height: 0px;
+}
+
+ul {
+    height: 0px;
+}
+
+
+#info-bar {
+    transition-duration: 0.6s;
+    opacity: 0.1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px 100px 100px 100px;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+}
+
+#info-bar ul {
+    transition-duration: 0.5s;
+}
+
+
+li {
+    width: 60px;
+    height: 30px;
+    list-style-type: none;
+}
+
+.page.user {
+    position: absolute;
+    top: 7%;
+    left: 50px;
+
+}
+
+.page.user img {
+    width: 45%;
+}
+
+.page.user > span {
+    color: white;
+    font-size: 130%;
+    position: absolute;
+    left: 60%
+}
+
+.page.comment {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.page.comment img {
+    width: 55%;
+}
+
+.page.comment > span {
+    color: white;
+    font-size: 220%;
+    position: absolute;
+    left: 80%;
+    top: -30%
+}
+
+
+.mine.posted {
+    position: absolute;
+    top: 90px;
+    left: 24px;
+}
+
+.mine.posted img {
+    width: 45%;
+}
+
+.mine.posted > span {
+    color: #66CDAA;
+    font-size: 150%;
+    position: absolute;
+    left: 50%;
+    top: -10%
+}
+
+.mine.like {
+    position: absolute;
+    top: 90px;
+    left: 85px;
+}
+
+.mine.like img {
+    width: 45%;
+}
+
+.mine.like > span {
+    color: #66CDAA;
+    font-size: 150%;
+    position: absolute;
+    left: 50%;
+    top: -10%
+}
+
+.info > ul {
+    position: relative;
+    right: 50px;
+}
+
+#control-ring li {
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px 100px 100px 100px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    right: 46px;
+
+    opacity: 0;
+}
+
+
+
+.mask.button {
+    background-image: url(assets/images/nomask.png);
+    bottom: 55px;
+}
+
+.history.button {
+    background-image: url(assets/images/history.png);
+    bottom: 100px;
+}
+
+.message.button {
+    background-image: url(assets/images/message.png);
+    bottom: 145px;
+}
+
+.message.button > span {
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #FF3030;
+    color: white;
+    text-align: center;
+    border-radius: 100px 100px 100px 100px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 30px;
+    top: -6px;
+    vertical-align: bottom;
+    opacity: 0;
+}
+
+.setting.button {
+    background-image: url(assets/images/setting.png);
+    bottom: 190px;
+}
+
+.sign.button {
+    background-image: url(assets/images/signin.png);
+    bottom: 235px;
+}
+
+.apb {
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    background-color: rgba(48, 63, 159, 0.5);
+    border-radius: 100px 100px 100px 100px;
+    width: 33px;
+    height: 33px;
+
+    position: relative;
+    bottom: 50px;
+}
+
+.icon {
+    transition-delay: 0.2s;
+    background-image: url(assets/images/atplus_white.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+    border-radius: 100px 100px 100px 100px;
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+#bottom-positioner:hover #info-bar {
+    transition-duration: 0.6s;
+    transition-property: all;
+    transform: translateY(-130px)  scale(5);
+    opacity: 1;
+}
+
+#bottom-positioner:hover #info-bar ul {
+    transition-duration: 0.5s;
+    transition-property: all;
+    transform: translate(35px, -13px) scale(0.21);
+    opacity: 1;
+}
+
+#bottom-positioner:hover .apb {
+    transition-duration: 0.5s;
+    background-color: rgba(48, 63, 159, 1);
+    transform: scale(2);
+}
+
+#bottom-positioner:hover .icon {
+
+    background-image: url(assets/images/atplus_green.png);
+    background-size: contain;
+}
+
+#bottom-positioner:hover .mask.button {
+    transition-duration: 0.5s;
+    transform: translate(-75px, -40px);
+    opacity: 1;
+}
+
+#bottom-positioner:hover .history.button {
+    transition-duration: 0.5s;
+    transform: translate(-100px, 10px);
+    opacity: 1;
+}
+
+#bottom-positioner:hover .message.button {
+    transition-duration: 0.5s;
+    transform: translate(-80px, 60px);
+    opacity: 1;
+}
+
+#bottom-positioner:hover .message.button span {
+    transition-delay: 0.5s;
+    transition-duration: 0.2s;
+    opacity: 1;
+}
+
+#bottom-positioner:hover .setting.button {
+    transition-duration: 0.5s;
+    transform: translate(-33px, 90px);
+    opacity: 1;
+}
+
+#bottom-positioner:hover .sign.button {
+    transition-duration: 0.5s;
+    transform: translate(25px, 80px);
+    opacity: 1;
+}
