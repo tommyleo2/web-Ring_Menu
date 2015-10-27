@@ -13,7 +13,6 @@ span {
 #bottom-positioner {
     transition-duration: 0.5s;
     border-radius: 100px 100px 100px 100px;
-    /* background-color: black; */
     position: absolute;
     width: 33px;
     height: 33px;
@@ -27,6 +26,20 @@ span {
     width: 33px;
     height: 33px;
     position: absolute;
+}
+
+#trigger {
+    transition-duration: 0.5s;
+    border-radius: 100px 100px 100px 100px;
+    /* background-color: black; */
+    position: absolute;
+    width: 33px;
+    height: 33px;
+}
+
+#bottom-positioner:hover #trigger {
+    transition-duration: 0.5s;
+   transform: scale(5) translate(-5px, 1px);
 }
 
 #control-ring-container {
@@ -112,8 +125,8 @@ ul {
 
 .mine.like {
     position: relative;
-    left: 10px;
-    bottom: 18px;
+    left: 7px;
+    bottom: 10px;
 }
 
 .mine.like span {
@@ -121,13 +134,13 @@ ul {
     font-size: 20px;
     position:relative;
     left: 10px;
-    bottom: 5px
+    bottom: 6px
 }
 
 .mine.posted {
     position: relative;
     right: 53px;
-    top: 10px;
+    top: 17px;
 }
 
 .mine.posted span {
